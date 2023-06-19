@@ -10,12 +10,48 @@ function HomePage() {
         <>
             <Navbar />
                 <div className="page">
-                    <h1>Home</h1>
+                    <div className="page-content-center-tall">
+                        <div className="header">
+                            <h1>Nuset</h1>
+                        </div>
+                        <section>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Rem, mollitia neque dicta ratione illum distinctio voluptatem, 
+                                 et tenetur, voluptas porro inventore vel! Recusandae culpa impedit nesciunt,
+                                  molestias amet explicabo possimus!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Rem, mollitia neque dicta ratione illum distinctio voluptatem, 
+                                 et tenetur, voluptas porro inventore vel! Recusandae culpa impedit nesciunt,
+                                  molestias amet explicabo possimus!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Rem, mollitia neque dicta ratione illum distinctio voluptatem, 
+                                 et tenetur, voluptas porro inventore vel! Recusandae culpa impedit nesciunt,
+                                  molestias amet explicabo possimus!
+                            </p>
+                        </section>
 
-                    <Link to="/" >Home</Link>
-                    <Link to="/tools">Tools</Link>
-                    <Link to="/contact">Contact</Link>
+                        <section>
+                            <h3>About</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Rem, mollitia neque dicta ratione illum distinctio voluptatem, 
+                                 et tenetur, voluptas porro inventore vel! Recusandae culpa impedit nesciunt,
+                                  molestias amet explicabo possimus!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Rem, mollitia neque dicta ratione illum distinctio voluptatem, 
+                                 et tenetur, voluptas porro inventore vel! Recusandae culpa impedit nesciunt,
+                                  molestias amet explicabo possimus!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Rem, mollitia neque dicta ratione illum distinctio voluptatem, 
+                                 et tenetur, voluptas porro inventore vel! Recusandae culpa impedit nesciunt,
+                                  molestias amet explicabo possimus!
+                            </p>
+                        </section>
 
+                    </div>
                 </div>
         </>
     )

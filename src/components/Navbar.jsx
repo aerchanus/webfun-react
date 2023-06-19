@@ -20,11 +20,11 @@ function Navbar() {
 
     return (
         <>
-        <div className={varsixsix}></div>
+        <div className={varsixsix} onClick={closeSideNav}></div>
         <nav className="navbar">
              <ul>
                 <li>
-                    <a href="/" className="noselect">NuTools</a>
+                    <Link to="/">NuTools</Link>
                 </li>
                 <li className="hamburger-icon noselect" onClick={openSideNav}>
                  <a className="flex-centre">☰</a>
@@ -33,28 +33,32 @@ function Navbar() {
         </nav>
         <div className={varsixnine}>
             <div className="sidenav-header">
-                <img src="" alt="Logo" className="noselect"/>
+                <img src="/NuSetLogo.png" alt="Logo" className="nav-logo noselect"/>
                 <div className="sidenav-closebtn noselect" onClick={closeSideNav}>
                     X
                 </div>
             </div>
             <aside className="sidenav-links">
                 <div className="sidenav-link">
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={closeSideNav}>Home</Link>
                 </div>
-                <div className="sidenav-link">
-                    <Link to="/">Tools</Link>
-                </div>
-                <div className="sidenav-tools-dropdown">
+                <div className="tools-link">
                     <div className="sidenav-link">
-                        <Link to="/tools/randhex">Random Hex Colour</Link>
+                        <Link to="/tools" onClick={closeSideNav}>↓   Tools   ↓</Link>
                     </div>
-                    <div className="sidenav-link">
-                        <Link to="/tools/notes">LocalStorage Notes</Link>
+                    <div className="sidenav-tools-dropdown">
+                        <div className="sidenav-link">
+                            <Link to="/tools/randhex" onClick={closeSideNav}>Random Hex Colour</Link>
+                        </div>
+                        <div className="sidenav-link">
+                            <Link to="/tools/notes" onClick={closeSideNav}>LocalStorage Notes</Link>
+                        </div>
                     </div>
+                    
                 </div>
+                
                 <div className="sidenav-link">
-                    <Link to="/">Contact</Link>
+                    <Link to="/contact" onClick={closeSideNav}>Contact</Link>
                 </div>
 
             </aside>

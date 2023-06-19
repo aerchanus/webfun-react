@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background : transparent;
+}
+::-webkit-scrollbar-thumb {
+
+  background: #66ff33;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #33cc33;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +22,10 @@
 }
 body {
   width: 100dvw;
+  height: 100dvh;
 }
 
-.flex-centre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -25,7 +37,63 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+.flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page {
-  height: calc(100dvh-48px);
-  display: block;
+  min-height: calc(100dvh - 48px);
+  width: 100dvw;
+  background: #282c34;
+  display: flex;
+  justify-content: center;
+  padding:0
+}
+
+.page-content-center-tall {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100dvh - 58px);
+  width: 65dvw;
+  background: #cfd8dc;
+  border: 1px solid white;
+  overflow-y: auto;
+  text-align: center;
+}
+
+
+.header {
+  padding: 1rem 2.5rem;
+}
+
+.page-content-center-tall section {
+  padding: 1rem 1.5rem;
+}
+
+.page-content-center-tall section p {
+  padding: 0.25rem 0;
+  line-height: 1.6rem;
+}
+.page-content-center-tall section p span {
+  background-color: invert;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .page-content-center-tall {
+    width: 100dvw;
+  }
 }
