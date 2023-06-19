@@ -3,14 +3,14 @@ import {createSlice} from '@reduxjs/toolkit'
 export const sidenavSlice = createSlice({
     name: 'sidenav',
     initialState: {
-        value: 0
+        value: "sidenav sidenav-hidden"
     },
     reducers: {
         openNav: state =>{
-            state.value = 1
+            state.value = "sidenav"
         },
         closeNav: state =>{
-            state.value = 0
+            state.value = "sidenav sidenav-hidden"
         }
     }
 })
